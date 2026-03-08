@@ -12,15 +12,20 @@
             <a class="logo" href="#" aria-label="KUSUDA home">
                 <img src="asset/sign 1.png" alt="KUSUDA">
             </a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <nav class="main-nav" aria-label="Main navigation">
+            <nav class="main-nav" id="site-menu" aria-label="Main navigation">
                 <a href="#">TOPICS</a>
                 <a href="#">SERVICE</a>
                 <a href="#">COMPANY</a>
                 <a href="#">RECRUIT</a>
             </nav>
-
             <a class="contact-btn" href="#">CONTACT</a>
+
         </div>
     </header>
 
@@ -80,28 +85,40 @@
 
         <section class="news-section" aria-label="News">
             <div class="content-wrap">
-                <div class="section-head">
-                    <h2>NEWS</h2>
+                <div class="section-head news-head">
+                    <div class="news-head-left">
+                        <h2>NEWS</h2>
+                        <p class="news-head-sub">お知らせ</p>
+                    </div>
                     <a href="#" aria-label="View all news">View all topics</a>
                 </div>
                 <div class="news-grid">
                     <article class="news-card   ">
                         <img src="asset/2013加工工程030 1.png" alt="News 1">
-                        <p class="news-tag">お知らせ</p>
+                        <div class="news-tags">
+                            <a class="news-tag" href="#" aria-label="事例">事例</a>
+                            <a class="news-tag" href="#" aria-label="導入事例">導入事例</a>
+                        </div>
                         <p class="news-title">ここにタイトルが入ります。ここにタイトルが入ります。</p>
-                        <p class="news-date">2025.09.09</p>
+                        <p class="news-date">2025.06.09</p>
                     </article>
                     <article class="news-card">
                         <img src="asset/2013加工工程030 1.png" alt="News 2">
-                        <p class="news-tag">お知らせ</p>
+                        <div class="news-tags">
+                            <a class="news-tag" href="#" aria-label="事例">事例</a>
+                            <a class="news-tag" href="#" aria-label="導入事例">導入事例</a>
+                        </div>
                         <p class="news-title">ここにタイトルが入ります。ここにタイトルが入ります。</p>
-                        <p class="news-date">2025.09.09</p>
+                        <p class="news-date">2025.06.09</p>
                     </article>
                     <article class="news-card">
                         <img src="asset/2013加工工程030 1.png" alt="News 3">
-                        <p class="news-tag">お知らせ</p>
+                        <div class="news-tags">
+                            <a class="news-tag" href="#" aria-label="事例">事例</a>
+                            <a class="news-tag" href="#" aria-label="導入事例">導入事例</a>
+                        </div>
                         <p class="news-title">ここにタイトルが入ります。ここにタイトルが入ります。</p>
-                        <p class="news-date">2025.09.09</p>
+                        <p class="news-date">2025.06.09</p>
                     </article>
                 </div>
             </div>
@@ -111,15 +128,87 @@
             <div class="content-wrap">
                 <div class="section-head">
                     <h2>SERVICE</h2>
-                    <a href="#" aria-label="View all services">事業紹介</a>
+                    <a href="#">事業内容</a>
                 </div>
                 <div class="service-grid">
-                    <img src="asset/Rectangle 213.png" alt="Service 1">
-                    <img src="asset/Rectangle 214.png" alt="Service 2">
-                    <img src="asset/Rectangle 238.png" alt="Service 3">
+                    <article class="service-card">
+                        <img src="asset/Rectangle 238.png" alt="製品情報">
+                        <p class="service-card-title">製品情報</p>
+                    </article>
+                    <article class="service-card">
+                        <img src="asset/2013加工工程030 1.png" alt="設備紹介">
+                        <p class="service-card-title">設備紹介</p>
+                    </article>
+                    <article class="service-card">
+                        <img src="asset/Rectangle 239.png" alt="制作工程">
+                        <p class="service-card-title">制作工程</p>
+                    </article>
                 </div>
             </div>
         </section>
+
+        <section class="company-section" aria-label="Company">
+            <div class="company-wrap">
+                <div class="section-head news-head company-head">
+                    <div class="news-head-left">
+                        <h2>COMPANY</h2>
+                        <p class="news-head-sub">会社案内</p>
+                    </div>
+                    <a href="#" aria-label="View company defor tails">View more</a>
+                </div>
+
+                <div class="company-visual">
+                    <div class="company-copy">
+                        <h3>創業105年</h3>
+                        <p>質の高いモノづくりを通して、<br>人生を豊かに過ごせる人づくりを目指しています。</p>
+                    </div>
+
+                    <img class="company-photo company-photo-top-right" src="asset/Rectangle 253.png" alt="Company upper photo">
+                    <img class="company-photo company-photo-center" src="asset/Rectangle 254.png" alt="Company center photo">
+                    <img class="company-photo company-photo-bottom-left" src="asset/Rectangle 254.png" alt="Company lower left photo">
+                    <img class="company-photo company-photo-bottom-right" src="asset/Rectangle 258.png" alt="Company lower right photo">
+                </div>
+
+                <div class="company-logos-clip">
+                    <img class="company-logos" src="asset/導入企業ロゴ.png" alt="Company partner logos">
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-section" aria-label="Movie">
+             <div class="content-wrap">
+                <div class="section-head movie-head">
+                    <h2>MOVIE</h2>
+                    <a href="#">動画</a>
+                </div>
+            <div class="movie-list">
+                <article class="movie-card">
+                    <img src="asset/Group 42.png" alt="Movie visual 1">
+                </article>
+                <article class="movie-card">
+                    <img src="asset/Group 43.png" alt="Movie visual 2">
+                </article>
+                <article class="movie-card movie-card-large">
+                    <img src="asset/Group 44.png" alt="Movie visual 3">
+                </article>
+                <article class="movie-card">
+                    <img src="asset/Group 45.png" alt="Movie visual 4">
+                </article>
+            </div>
+            </div>
+        </section>
     </main>
+    <script>
+        (() => {
+            const toggle = document.querySelector(".menu-toggle");
+            const header = document.querySelector(".site-header");
+            if (!toggle || !header) return;
+
+            toggle.addEventListener("click", () => {
+                const isOpen = header.classList.toggle("menu-open");
+                toggle.setAttribute("aria-expanded", String(isOpen));
+            });
+        })();
+    </script>
 </body>
 </html>
