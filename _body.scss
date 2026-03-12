@@ -1,6 +1,6 @@
 html,
 body {
-  width: 1200px;
+  width: 100%;
   min-height: 100%;
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -97,14 +97,14 @@ body {
 
 .hero-title1 {
   position: absolute;
-  top: 13%;
+  top: 9%;
   left: 43%;
   z-index: 2;
   transform: translate(-50%, -50%);
   font-family: "SimSun", "宋体", serif;
   margin: 0;
   color: #fff;
-  font-size: clamp(58px, 7vw, 83px);
+  font-size: clamp(98px, 10vw, 109px);
   font-weight: 480;
   line-height: 0.84;
   letter-spacing: 0.04em;
@@ -115,14 +115,14 @@ body {
 
 .hero-title2 {
   position: absolute;
-  top: 42%;
-  left: 56%;
+  top: 59%;
+  left: 58%;
   z-index: 0;
   transform: translate(-50%, -50%);
   font-family: "SimSun", "宋体", serif;
   margin: 0;
   color: #fff;
-  font-size: clamp(52px, 6vw, 76px);
+  font-size: clamp(98px, 10vw, 109px);
   font-weight: 480;
   line-height: 0.89;
   letter-spacing: 0.04em;
@@ -241,7 +241,7 @@ main {
   height: 240px;
   object-fit: cover;
   display: block;
-  margin-top: 86px;
+  margin-top: 40px;
   margin-left: 7%;
   position: relative;
   z-index: 2;
@@ -509,7 +509,9 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 15px;
+  min-width: 120px;
+  white-space: nowrap;
 }
 
 .view-more-link::after {
@@ -715,7 +717,7 @@ main {
 .movie-card img {
   width: 960px;
   height: 180px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -796,8 +798,10 @@ main {
   margin-left: auto;
   margin-right: 20%;
   padding-bottom: 12px;
+  padding-right: 20px;
   min-width: 120px;
   border-bottom: 1px solid #d3d3d3;
+  transform: translateX(-3%);
   text-align: left;
   font-family: "helvetica", sans-serif;
   font-size: 12px;
@@ -1002,201 +1006,4 @@ color: #ffffff;
   .recruit-head-right {
     width: min(360px, 44vw);
   }
-}
-
-
-@media (max-width: 768px) {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .landing-gallery {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 600px;
-    margin-top: 0;
-  }
-
-  .landing-gallery img {
-    position: absolute;
-    width: 100%;
-    height: 600px;
-    object-fit: contain;
-  }
-
-  .hero-overlay {
-    height: 390px;
-  }
-
-  .hero-text-group {
-       position: relative;
-    width: 190px;
-    height: 394px;
-    max-width: 190px;
-    max-height: 394px;
-  }
-
-  .hero-title1 {
-    top: 26%;
-    left: 44%;
-    font-size: 68px;
-    line-height: 0.86;
-  }
-
-  .hero-title2 {
-     top: 65%;
-    left: 64%;
-    font-size: 70px;
-    line-height: 0.88;
-  }
-
-  .hero-label {
-    font-size: 11px;
-    letter-spacing: 0.12em;
-  }
-
-  .hero-label-left {
-     top: 58%;
-    left: 26%;
-  }
-
-  .hero-label-right {
-    top: 34%;
-    left: 84%;
-    width: 76px;
-    line-height: 1.15;
-  }
-
-  .music-btn-hero {
-    left: 24px;
-    bottom: 44px;
-    width: 176px;
-    height: 48px;
-    margin-left: 0;
-  }
-
-.landing-gallery > img:first-of-type {
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
-    object-position: center top;
-    z-index: 0;
-}
-
-.landing-gallery > img:last-of-type {
-    clip-path: polygon(0 70%, 100% 30%, 100% 100%, 0 100%);
-    object-position: center bottom;
-    z-index: 1;
-}
-
-  .company-section {
-    padding: 44px 0 56px;
-  }
-
-  .company-wrap {
-    width: calc(100% - 24px);
-  }
-
-  .company-visual {
-    height: 420px;
-  }
-
-  .company-copy {
-    top: 78px;
-    left: 20px;
-  }
-
-  .company-copy h3 {
-    font-size: 32px;
-    margin-bottom: 16px;
-  }
-
-  .company-copy p {
-    font-size: 18px;
-  }
-
-  .company-photo-top-right {
-    width: 230px;
-    height: 172px;
-    top: -20px;
-    right: -8px;
-    border-width: 6px;
-  }
-
-  .company-photo-center {
-    width: 120px;
-    height: 90px;
-    left: 52%;
-    top: 98px;
-  }
-
-  .company-photo-bottom-right {
-    width: 180px;
-    height: 135px;
-    right: 8px;
-    bottom: -8px;
-    border-width: 4px;
-  }
-
-  .company-photo-bottom-left {
-    width: 140px;
-    height: 105px;
-    left: 16px;
-    bottom: 20px;
-    border-width: 3px;
-  }
-
-  .company-logos-clip {
-    margin-top: 34px;
-  }
-
-  .movie-section {
-    padding: 44px 12px;
-  }
-
-  .recruit-head {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .recruit-head-right {
-    width: 100%;
-    gap: 10px;
-  }
-
-  .recruit-head-right a {
-    align-self: flex-start;
-  }
-
-  .recruit-panel {
-    flex-direction: column;
-    gap: 24px;
-    padding: 28px 16px;
-  }
-
-  .recruit-panel-right {
-    width: 100%;
-    gap: 18px;
-    justify-content: space-between;
-  }
-
-  .movie-card {
-    height: 140px;
-  }
-
-  .movie-card img {
-    height: 140px;
-  }
-
-  .movie-card-large {
-    height: 260px;
-  }
-
-  .movie-card-large img {
-    height: 260px;
-  }
-
-
-
 }
