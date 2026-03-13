@@ -293,7 +293,13 @@
 
   .about-copy {
     order: 3;
-    display: none;
+    display: flex;
+    width: min(520px, 100%);
+    height: auto;
+    font-size: clamp(13px, 3.5vw, 16px);
+    line-height: 1.8;
+    padding: 0 16px;
+    margin-top: 8px;
   }
  
     .news-grid {
